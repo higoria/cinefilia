@@ -1,0 +1,30 @@
+.section02 {
+  padding-top: 100px;
+}
+
+.titulo-da-sessao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.h1-titulo-sessao {
+  padding-top: 6px;
+  font-size: 1.9rem;
+  width: 100%;
+}
+
+.h1-titulo-sessao::after {
+  position: relative;
+  top: -9px;
+  left: 20px;
+  content: "";
+  display: inline-block;
+  width: 91%;
+  height: 1px;
+  background-color: var(--cinza);
+}
+
+.setas-conteiner {
+  padding-top: 30px;
+}

@@ -1,0 +1,146 @@
+.section01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  position: relative;
+}
+
+.h1-texto-principal {
+  font-size: 3rem;
+  line-height: 50px;
+  padding-bottom: 20px;
+  font-weight: 900;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 21%, #c40d60 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.texto-secundario {
+  max-width: 70ch;
+  padding-bottom: 40px;
+}
+
+.div-btn-começar {
+  border: 1px solid var(--branco);
+  padding: 15px 30px;
+  border-radius: 8px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.div-btn-começar a {
+  color: var(--branco);
+}
+
+.img-play {
+  filter: invert(1);
+}
+.lado-direito-banner {
+  position: relative;
+}
+.lado-esquerdo-banner {
+  width: 50%;
+}
+.lado-direito-banner .img-aranha {
+  position: relative;
+  z-index: 99;
+  left: -180px;
+}
+.lado-direito-banner .img-guardiao {
+  position: absolute;
+  top: -120px;
+  left: 25px;
+}
+
+@media (max-width: 1136px) and (min-width: 950px) {
+  .lado-direito-banner .img-aranha {
+    position: relative;
+    z-index: 99;
+    left: -100px;
+    width: 220px;
+  }
+
+  .lado-direito-banner .img-guardiao {
+    position: absolute;
+    top: -90px;
+    left: 25px;
+    width: 220px;
+  }
+
+  .h1-texto-principal {
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+
+  .texto-secundario {
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 576px) {
+  .section01 {
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  .lado-esquerdo-banner {
+    width: 100%;
+  }
+
+  .lado-direito-banner .img-aranha {
+    position: relative;
+    z-index: 99;
+    left: -70px;
+  }
+
+  .lado-direito-banner .img-guardiao {
+    position: absolute;
+    top: -90px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 575px) and (min-width: 300px) {
+  .section01 {
+    flex-direction: column;
+    gap: 200px;
+    padding-inline: 30px;
+    padding-top: 197px;
+  }
+
+  .lado-esquerdo-banner {
+    width: 100%;
+  }
+
+  .lado-direito-banner .img-aranha {
+    left: -70px;
+    width: 180px;
+    top: -40px;
+  }
+
+  .lado-direito-banner .img-guardiao {
+    left: 50px;
+    width: 230px;
+  }
+
+  .h1-texto-principal {
+    font-size: 1.7rem;
+    line-height: 39px;
+    padding-bottom: 20px;
+  }
+
+  .texto-secundario {
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+  }
+
+  .div-btn-começar {
+    padding: 10px 25px;
+  }
+}
