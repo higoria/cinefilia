@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 912px) and (min-height: 501px){
+@media (max-width: 912px) and (min-height: 501px) {
   .oscars-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -130,11 +130,21 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 300px) {
+  .oscars-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .listaDeFilmes {
+    width: 160px;
+  }
+
   .h1-titulo-sessao03,
   .h1-titulo-sessao02,
   .h1-titulo-sessao {
-    font-size: 0.7rem;
+    font-size: 1.3rem;
+    display: inline-block;
   }
 
   .titulo-da-sessao img {
@@ -146,15 +156,20 @@
     gap: 10px;
   }
 
-  .listaDeFilmes h1, .infosAnoEQuantidade h3 {
+  .listaDeFilmes h1,
+  .infosAnoEQuantidade h3 {
     font-size: 0.7rem;
   }
 
   .imgFilmeOscar img {
     width: 160px;
-    height: 250px;
+    height: 220px;
   }
   .infosAnoEQuantidade {
     width: 160px;
+  }
+
+  .section04 {
+    padding-inline: 10px;
   }
 }

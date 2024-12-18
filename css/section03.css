@@ -10,8 +10,12 @@
   height: 1px;
   background-color: var(--cinza);
 }
-.carrossel02{
+.carrossel02 {
   padding-bottom: 30px;
+}
+
+.titulo-da-sessao02 h1 {
+  width: 100vw !important;
 }
 
 @media (max-width: 1145px) {
@@ -19,6 +23,6 @@
     display: none;
   }
   .section03 {
-    padding-inline: 30px;
+    padding-inline: 10px;
   }
 }
