@@ -1,6 +1,6 @@
 :root {
   --cinza: #c9c9c9;
-  --preto: #000;
+  --preto: #1c1c1c;
   --branco: #fff;
 }
 
@@ -25,6 +25,7 @@ html {
   min-height: 100vh;
   background-color: var(--preto);
   color: var(--branco);
+  scroll-behavior: smooth;
 }
 
 a,
@@ -43,3 +44,4 @@ button {
   border: none;
   cursor: pointer;
 }
+

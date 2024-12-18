@@ -81,6 +81,10 @@
     font-size: 0.9rem;
     padding-bottom: 20px;
   }
+
+  .section01 {
+    padding-inline: 30px;
+  }
 }
 
 @media (max-width: 949px) and (min-width: 576px) {

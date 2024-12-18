@@ -1,0 +1,24 @@
+.h1-titulo-sessao02::after {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  content: "";
+  display: flex;
+  flex-wrap: wrap;
+  width: 72%;
+  max-width: 72%;
+  height: 1px;
+  background-color: var(--cinza);
+}
+.carrossel02{
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1145px) {
+  .h1-titulo-sessao02::after {
+    display: none;
+  }
+  .section03 {
+    padding-inline: 30px;
+  }
+}

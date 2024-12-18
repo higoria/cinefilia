@@ -27,6 +27,10 @@
   display: none;
 }
 
+.span-logo {
+  color: #c40d60;
+}
+
 @media (max-width: 996px) {
   .ul-nav {
     flex-direction: column;
@@ -79,6 +83,10 @@
     position: absolute;
     top: 110px;
     right: 29px;
+  }
+
+  .h1-logo {
+    font-size: 1.8rem;
   }
 }
 

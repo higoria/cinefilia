@@ -6,25 +6,118 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  width: 100%;
+  max-width: 90%;
 }
 
 .h1-titulo-sessao {
   padding-top: 6px;
   font-size: 1.9rem;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .h1-titulo-sessao::after {
-  position: relative;
-  top: -9px;
-  left: 20px;
+  position: absolute;
+  top: 30px;
+  left: 150px;
   content: "";
-  display: inline-block;
-  width: 91%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 90%;
   height: 1px;
   background-color: var(--cinza);
 }
 
 .setas-conteiner {
   padding-top: 30px;
+}
+
+.setaEsquerda,
+.setaDireita {
+  cursor: pointer;
+}
+
+.carrossel {
+  width: 100%; /* Largura total do contêiner */
+  overflow-x: auto; /* Ativa o scroll horizontal */
+  white-space: nowrap;
+  overflow-x: auto; /* Impede que os itens quebrem para a próxima linha */
+}
+
+.carrosselBox {
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.carrosselBox img {
+  height: 370px;
+  width: 370px;
+  background-size: cover;
+  background-color: rgb(226, 89, 89);
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+  image-rendering: optimizeQuality;
+  image-rendering: optimizeSpeed;
+  border-radius: 8px;
+}
+
+.carrosselBox img:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.carrossel01 {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1145px) {
+  .h1-titulo-sessao::after {
+    display: none;
+  }
+  .section02 {
+    padding-inline: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section02 {
+    padding-inline: 30px;
+  }
+
+  .carrosselBox {
+    height: 500px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .carrosselBox img {
+    height: 370px;
+    width: 370px;
+    background-size: cover;
+    background-color: rgb(226, 89, 89);
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease;
+    z-index: 2;
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
+  }
 }
